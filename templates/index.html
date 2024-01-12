@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search App</title>
+</head>
+<body>
+    <h1>Search Movies/Books/Pictures</h1>
+    <form action="/search" method="post">
+        <label for="query">Search:</label>
+        <input type="text" name="query" required>
+        <label for="category">Category:</label>
+        <select name="category" required>
+            <option value="Title">Title</option>
+            <option value="Release Year">Release Year</option>
+            <option value="Director/Author">Director/Author</option>
+        </select>
+        <button type="submit">Search</button>
+    </form>
+</body>
+</html>
