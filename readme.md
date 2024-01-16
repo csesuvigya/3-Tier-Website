@@ -14,13 +14,13 @@ This is a simple web-based application that allows users to search for movies ba
 # DIRECTORY STRUCTURE
 
 ``` 
-3 TIER WEBSITE
- -- templates
-    |-- index.html          #Page containg a form for user interaction. 
-    |-- results.html        #results page, to be redered when user searched something from the index.html
- -- app.py                  #python file containing the search logic
- -- data.csv                #CSV file containing the movies data
- -- readme.md  
+|-- 3 TIER WEBSITE
+|   |-- templates
+|     |-- index.html          #Page containg a form for user interaction. 
+|     |-- results.html        #results page, to be redered when user searched something from the index.html
+|-- app.py                  #python file containing the search logic
+| -- data.csv                #CSV file containing the movies data
+| -- readme.md  
 ``` 
 
 # SETUP
