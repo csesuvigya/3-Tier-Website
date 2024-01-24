@@ -35,14 +35,18 @@
 </head>
 <body>
     <h1>Search Results</h1>
-    <ul>
-        {% for result in results %}
-            <li><strong>Title:</strong> {{ result['Title'] }}</li>
-            <li><strong>Type:</strong> {{ result['Type'] }}</li>
-            <li><strong>Release Year:</strong> {{ result['Release Year'] }}</li>
-            <li><strong>Director/Author:</strong> {{ result['Director/Author'] }}</li>
-        {% endfor %}
-    </ul>
+    {% if results %}
+        <ul>
+            {% for result in results %}
+                <li><strong>Title:</strong> {{ result['Title'] }}</li>
+                <li><strong>Type:</strong> {{ result['Type'] }}</li>
+                <li><strong>Release Year:</strong> {{ result['Release Year'] }}</li>
+                <li><strong>Director/Author:</strong> {{ result['Director/Author'] }}</li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No details found in the database</p>
+    {% endif %}
 </body>
 </html>
 
